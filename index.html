@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоматизированная система микроклимата | ООО «КАЗАКОВ+»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-shell">
+        <!-- Навигация -->
+        <nav class="main-nav" id="mainNav">
+            <div class="nav-brand">
+                <span class="nav-logo">КАЗАКОВ+</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">О проекте</a></li>
+                <li><a href="#technology">Технология</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#videos">Видео</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="greeting" class="hero hero-welcome">
+                <div class="hero-bg-elements">
+                    <div class="floating-circle circle-1"></div>
+                    <div class="floating-circle circle-2"></div>
+                    <div class="floating-circle circle-3"></div>
+                </div>
+                <div class="hero-copy welcome-card welcome-card-centered">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Инновационный проект для сельского хозяйства
+                    </div>
+                    <h1>Автоматизированная<br>система микроклимата<br>для ферм КРС</h1>
+                    <h3>Интеллектуальное управление температурой и влажностью для повышения продуктивности молочного стада</h3>
+                    <div class="button-container">
+                        <a href="#about" class="cta-button primary">О проекте</a>
+                        <a href="#technology" class="cta-button secondary">Технология</a>
+                        <a href="#achievements" class="cta-button secondary">Достижения</a>
+                        <a href="#videos" class="cta-button secondary">Видео</a>
+                        <a href="#contacts" class="cta-button secondary">Контакты</a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">±0.5°C</span>
+                        <span class="stat-label">Точность контроля</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">Рост продуктивности</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Мониторинг</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- О проекте -->
+            <section id="about" class="about-section about-section-first">
+                <div class="section-intro section-intro-stack section-intro-left">
+                    <p class="section-kicker">О проекте</p>
+                    <h2>Чем занимаемся</h2>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-story glass-card">
+                        <p>Компания ООО «КАЗАКОВ+» разрабатывает автоматизированную систему контроля микроклимата для животноводческих комплексов крупного рогатого скота.</p>
+                        <ul class="feature-list">
+                            <li>Постоянный мониторинг температуры и влажности в реальном времени.</li>
+                            <li>Автоматическое регулирование вентиляции и отопления.</li>
+                            <li>Интеллектуальные алгоритмы адаптации под сезонные изменения.</li>
+                            <li>Удалённый доступ к данным через мобильное приложение.</li>
+                            <li>Снижение энергозатрат на климат-контроль до 25%.</li>
+                        </ul>
+                        <p>Система позволяет создать оптимальные условия для содержания коров, что напрямую влияет на надои и здоровье животных.</p>
+                        <a href="mailto:dima.kaz02@bk.ru" class="contact-button">Связаться с нами</a>
+                    </div>
+
+                    <div class="visual-stack">
+                        <div class="visual-caption" aria-label="Описание системы">
+                            <p>Автоматизированная система контроля микроклимата в помещении для содержания КРС</p>
+                        </div>
+                        <article class="gallery-card slider-card" aria-label="Галерея проекта">
+                            <div class="slider-viewport">
+                                <img class="slider-image is-active" src="img/placeholder-system.jpg" alt="Система микроклимата" data-slide>
+                                <img class="slider-image" src="img/placeholder-farm.jpg" alt="Ферма КРС" data-slide>
+                                <img class="slider-image" src="img/placeholder-sensors.jpg" alt="Датчики системы" data-slide>
+                                <button class="slider-open-button" type="button" data-slider-open aria-label="Открыть фотографию">Открыть фото</button>
+                            </div>
+                            <div class="slider-ui">
+                                <button class="slider-button" type="button" data-slider-prev aria-label="Предыдущая фотография">Назад</button>
+                                <div class="slider-dots" aria-label="Навигация по фотографиям">
+                                    <button class="slider-dot is-active" type="button" data-slider-dot="0" aria-label="Показать первую фотографию"></button>
+                                    <button class="slider-dot" type="button" data-slider-dot="1" aria-label="Показать вторую фотографию"></button>
+                                    <button class="slider-dot" type="button" data-slider-dot="2" aria-label="Показать третью фотографию"></button>
+                                </div>
+                                <button class="slider-button" type="button" data-slider-next aria-label="Следующая фотография">Дальше</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Технология -->
+            <section id="technology" class="content-section technology-section" aria-labelledby="technology-title">
+                <div class="section-intro section-intro-stack">
+                    <p class="section-kicker">Технология</p>
+                    <h2 id="technology-title">Как работает система</h2>
+                    <p class="section-description">Комплексное решение на основе IoT-датчиков и интеллектуальных алгоритмов для создания и поддержания оптимального микроклимата.</p>
+                </div>
+
+                <div class="tech-grid">
+                    <article class="glass-card tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 12v12l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Мониторинг 24/7</h3>
+                        <p>Беспроводные датчики температуры, влажности и CO₂ передают данные каждые 30 секунд на центральный контроллер.</p>
+                    </article>
+
+                    <article class="glass-card tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Интеллектуальное управление</h3>
+                        <p>Алгоритмы машинного обучения анализируют данные и автоматически регулируют вентиляцию, отопление и увлажнение.</p>
+                    </article>
+
+                    <article class="glass-card tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 40V16l16-8 16 8v24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 22v12M24 18v16M32 22v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Удалённый доступ</h3>
+                        <p>Веб-панель и мобильное приложение позволяют контролировать параметры микроклимата с любого устройства.</p>
+                    </article>
+
+                    <article class="glass-card tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Энергоэффективность</h3>
+                        <p>Оптимизация работы климатического оборудования снижает энергопотребление на 20–25% без потери комфорта животных.</p>
+                    </article>
+                </div>
+
+                <div class="tech-diagram glass-card">
+                    <h3>Схема работы системы</h3>
+                    <div class="diagram-flow">
+                        <div class="diagram-step">
+                            <div class="step-number">1</div>
+                            <span class="step-label">Датчики</span>
+                        </div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-step">
+                            <div class="step-number">2</div>
+                            <span class="step-label">Контроллер</span>
+                        </div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-step">
+                            <div class="step-number">3</div>
+                            <span class="step-label">Анализ ИИ</span>
+                        </div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-step">
+                            <div class="step-number">4</div>
+                            <span class="step-label">Исполнители</span>
+                        </div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-step">
+                            <div class="step-number">5</div>
+                            <span class="step-label">Оптимальный микроклимат</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Достижения -->
+            <section id="achievements" class="content-section achievements-section" aria-labelledby="achievements-title">
+                <div class="section-intro section-intro-stack">
+                    <p class="section-kicker">Достижения</p>
+                    <h2 id="achievements-title">Ключевые достижения компании</h2>
+                </div>
+
+                <div class="achievement-grid">
+                    <article class="glass-card achievement-card">
+                        <div class="achievement-media media-surface">
+                            <div class="placeholder-image" style="--ph-text: 'Диплом УМНИК'">
+                                <span>Диплом конкурса УМНИК</span>
+                            </div>
+                        </div>
+                        <div class="achievement-content">
+                            <p><span>ООО «КАЗАКОВ+» стал победителем конкурса Фонда содействия инновациям «УМНИК»</span></p>
+                            <span class="achievement-year">2024</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card achievement-card">
+                        <div class="achievement-media media-surface">
+                            <div class="placeholder-image" style="--ph-text: 'Патент РФ'">
+                                <span>Патент на изобретение</span>
+                            </div>
+                        </div>
+                        <div class="achievement-content">
+                            <p><span>Получен патент РФ на автоматизированную систему контроля микроклимата для животноводства</span></p>
+                            <span class="achievement-year">2025</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card achievement-card">
+                        <div class="achievement-media media-surface">
+                            <div class="placeholder-image" style="--ph-text: 'Пилотный проект'">
+                                <span>Пилотный проект</span>
+                            </div>
+                        </div>
+                        <div class="achievement-content">
+                            <p><span>Успешная установка пилотной системы на ферме КРС в Вологодской области</span></p>
+                            <span class="achievement-year">2025</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Видео -->
+            <section id="videos" class="content-section videos-section" aria-labelledby="videos-title">
+                <div class="section-intro section-intro-stack">
+                    <p class="section-kicker">Видео</p>
+                    <h2 id="videos-title">Видео о проекте</h2>
+                </div>
+
+                <article class="glass-card video-showcase" data-video-gallery>
+                    <div class="video-frame video-frame-large" id="video-panel" role="tabpanel" aria-labelledby="videos-current-title" data-video-frame>
+                        <div class="video-placeholder" id="videoPlaceholder">
+                            <div class="placeholder-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M24 16l24 16-24 16V16z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <p>Видео о системе микроклимата</p>
+                            <span class="placeholder-hint">Добавьте ссылку на видео в настройках</span>
+                        </div>
+                    </div>
+
+                    <div class="video-showcase-meta">
+                        <div class="video-meta">
+                            <h3 id="videos-current-title" data-video-current-title>Демонстрация работы системы</h3>
+                        </div>
+                    </div>
+
+                    <div class="video-switcher">
+                        <button class="video-nav-button" type="button" data-video-prev aria-label="Предыдущее видео">Назад</button>
+                        <div class="video-switcher-list" role="tablist" aria-label="Список видео о проекте">
+                            <button
+                                class="video-dot is-active"
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                                aria-controls="video-panel"
+                                tabindex="0"
+                                data-video-option
+                                data-video-index="0"
+                                data-video-title="Демонстрация работы системы">
+                            </button>
+                            <button
+                                class="video-dot"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="video-panel"
+                                tabindex="-1"
+                                data-video-option
+                                data-video-index="1"
+                                data-video-title="Установка на ферме">
+                            </button>
+                            <button
+                                class="video-dot"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="video-panel"
+                                tabindex="-1"
+                                data-video-option
+                                data-video-index="2"
+                                data-video-title="Интервью с разработчиком">
+                            </button>
+                        </div>
+                        <button class="video-nav-button" type="button" data-video-next aria-label="Следующее видео">Дальше</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Контакты -->
+        <footer id="contacts" class="site-footer site-footer-merged">
+            <div class="footer-shell footer-shell-enterprise">
+                <div class="footer-copy footer-copy-merged">
+                    <h1>Контакты и поддержка проекта</h1>
+                </div>
+
+                <div class="footer-main-grid">
+                    <div class="footer-column footer-column-contacts">
+                        <div class="footer-pane footer-contacts-pane">
+                            <div class="footer-contact-list">
+                                <div class="footer-contact-row">
+                                    <strong>Email</strong>
+                                    <span>dima.kaz02@bk.ru</span>
+                                </div>
+                                <div class="footer-contact-row">
+                                    <strong>Компания</strong>
+                                    <span>ООО «КАЗАКОВ+»</span>
+                                </div>
+                                <div class="footer-contact-row">
+                                    <strong>Направление</strong>
+                                    <span>Автоматизация сельского хозяйства</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-pane footer-company-pane">
+                            <h2><strong>ООО «КАЗАКОV+»</strong></h2>
+                            <p>Разработка и внедрение автоматизированных систем микроклимата для животноводческих комплексов. Создание комфортных условий для КРС с помощью современных IoT-решений и интеллектуальных алгоритмов.</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-column footer-column-support">
+                        <div class="footer-support-grid">
+                            <article class="footer-support-card">
+                                <div class="footer-support-logo">
+                                    <div class="placeholder-image small" style="--ph-text: 'Фонд'">
+                                        <span>Фонд содействия инновациям</span>
+                                    </div>
+                                </div>
+                                <p>Проект реализуется при поддержке Фонда содействия развитию малых форм предприятий в научно-технической сфере</p>
+                            </article>
+
+                            <article class="footer-support-card">
+                                <div class="footer-support-logo">
+                                    <div class="placeholder-image small" style="--ph-text: 'Стартап'">
+                                        <span>Конкурс «Стартап как диплом»</span>
+                                    </div>
+                                </div>
+                                <p>Участник конкурса «Стартап как диплом»</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-divider" aria-hidden="true"></div>
+
+                <div class="footer-bottom-row">
+                    <p>© 2026 <strong>ООО «КАЗАКОV+»</strong>. Все права защищены.</p>
+                    <p>Проект реализуется при поддержке <span class="footer-inline-emphasis">Фонда содействия развитию малых форм предприятий в научно-технической сфере</span> и является участником конкурса <span class="footer-inline-emphasis">«Стартап как диплом»</span>.</p>
+                </div>
+
+                <div class="footer-legal">
+                    <h2>Правовая информация</h2>
+                    <p>© 2026 <strong>ООО «КАЗАКОV+»</strong>. Все права защищены.</p>
+                    <p>Материалы проекта, текст, фотографии, изображения, технические решения и концепция автоматизированной системы микроклимата защищены авторским правом. Использование, копирование, распространение или публикация материалов без письменного разрешения <strong>ООО «КАЗАКОV+»</strong> запрещены.</p>
+                    <p>Технология защищена патентом РФ.</p>
+                    <p><span class="footer-inline-emphasis">Фонд содействия развитию малых форм предприятий в научно-технической сфере</span>, <span class="footer-inline-emphasis">конкурс «Стартап как диплом»</span> используются исключительно в информационных целях и принадлежат соответствующим правообладателям.</p>
+                    <p>Проект представлен в демонстрационных и конкурсных целях. Информация, размещённая на сайте, не является публичной офертой.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Lightbox -->
+        <div class="lightbox" data-lightbox aria-hidden="true" hidden>
+            <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Закрыть просмотр"></button>
+            <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
+                <button class="lightbox-close" type="button" data-lightbox-close aria-label="Закрыть просмотр">Закрыть</button>
+                <img class="lightbox-image" src="" alt="" data-lightbox-image>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
